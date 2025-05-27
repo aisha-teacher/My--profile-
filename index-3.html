@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=poppins:wgh t@300;500;700&display=swap"rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY PROFILE</title>
+  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+<body>
+  <nav class="navbar">
+    <div class="logo">AISHA</div>
+    <ul class="nav-links">
+      <li><a href="#hero">HOME</a></li>
+      <li><a href="#services-section">WHAT I CAN OFFER</a></li>
+      <li><a href="#project-section">MY PROJECT</a></li>
+      <li><a href="#contact-section">GET IN TOUCH</a></li>
+      
+    </ul>
+  </nav> 
+
+  <div class="hero">
+    <div class="overlay">
+      <div class="content">
+        <img src="IDPhoto_20250311_172144.jpg" alt="Your Picture" class="profile-pic" />
+        <h1>AISHA MOHAMMED </h1>
+        <h2>TEACHER</h2>
+        <p>
+          I am a passionate professional and dedicated teacher committed to empowering students through quality education . i offer a range of academic services designed to enhanced learning , develop skills and uplistmy commiunity.
+        </p>
+        <a href="#services-section" class="btn">See What I Offer</a>
+      </div>
+    </div>
+  </div>
+  <section class="services-section">
+    <h2 class="heading">What I Can Offer</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="classroom-svgrepo-com.svg" alt="Tutoring Icon" class="service-icon">
+        <h3>Private Tutoring</h3>
+        <p>One-on-one sessions tailored to individual learning styles and needs.</p>
+      </div>
+      <div class="service-card">
+        <img src="teacher-svgrepo-com (1).svg" alt="Workshop Icon" class="service-icon">
+        <h3>Workshops & Seminars</h3>
+        <p>Engaging educational events to empower both students and fellow educators.</p>
+      </div>
+      <div class="service-card">
+        <img src="trophy-svgrepo-com (1).svg" alt="Mentorship Icon" class="service-icon">
+        <h3>Student Mentorship</h3>
+        <p>Guidance and motivation to help learners build confidence and set academic goals.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  
+  <section class="projects-section">
+    <h2 class="heading">My Projects</h2>
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="IMG_20250513_105816_525@95414902.jpg" alt="Project 1">
+        <div class="caption">TEACHING IN THE CLASSROOM</div>
+      </div>
+      <div class="slide fade">
+        <img src="file_00000000728462438ed3b1472eb333fa (1).png"  alt="Project 2">
+        <div class="caption">online teaching</div>
+      </div>
+      <div class="slide fade">
+        <img src="original-1334aa4a663acf94b9eb40214e18ff78.png" alt="Project 3">
+        <div class="caption">Student Portal Interface</div>
+      </div>
+    </div>
+  </section>
+  <section class="contact-section">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-subtitle"> I support students at every level to build confidence, clarity and a love for numbers</p>
+  
+    <div class="contact-container">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <p><strong>Email:</strong> mais070322@gmail.com</p>
+        <p><strong>Phone:</strong> +234 070322 64924</p>
+        <p><strong>Address:</strong> No. 254, upper newlyout, lokoja, kogi state,Nigeria</p>
+  
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+  
+      <!-- Contact Form -->
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required aria-label="Name">
+        <input type="email" placeholder="Your Email" required aria-label="Email">
+        <textarea placeholder="Your Message" required aria-label="Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  
+    <!-- Map -->
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+    <!-- Footer -->  <footer>
+      <div class="candle-wrapper">
+        <div class="flame fixed-candel small-flame">
+          <div class="red flamee"></div>
+          <div class="orange flamee"></div>
+          <div class="yellow flamee"></div>
+          <div class="white flamee"></div>
+          <div class="blue circle"></div>
+          <div class="black circle"></div>
+          </div>
+          <div class="candle-stand"></div>
+    </div>
+      <p>&copy; 2025 AISHA | All Rights Reserved</p>
+    </footer>  
+  
+  
+ 
+  
+
+  <script>
+    "use strict";
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1;}
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 9000); // Change image every 3 seconds
+    }
+    window.onload=showSlides;
+  </script>
+
+
+</body>
+</html>

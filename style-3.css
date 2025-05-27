@@ -1,0 +1,480 @@
+body, html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #0d47a1;
+  color: white;
+}
+.nav-links {
+  padding: 20px;
+  margin: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+
+
+.hero {
+  height: 100vh;
+  background: url('IMG_20250509_153602_440@-155876535.jpg') no-repeat center center/cover;
+  position: relative;
+  color: white;
+  opacity: 0.7;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #0d47a1;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.services-section {
+  position: relative;
+  padding: 60px 20px;
+  text-align: center;
+  z-index: 2;
+  overflow: hidden;
+  /* filter: brightness(50%); */
+}
+
+.heading {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 8px;
+  background: linear-gradient(to right,#0d47a1, #42a5f5);
+  opacity: 0.7;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0d47a1;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+.services-section::before{
+content:"";
+position:absolute;
+top: 0; left: 0; right: 0;bottom: 0;
+background: url(IMG_20250513_105816_525@95414902.jpg) no-repeat center center/cover;
+filter: blur(60px);
+z-index: 0;
+opacity: 0.2;
+transform: none;
+}
+.services-section::after{
+  content:"";
+  position:absolute;
+  top: 0; left: 0; right: 0;bottom: 0;
+  background: rgba(0,0,0, 0.5) ;
+  z-index: 1;
+  /* transform: scale(1.1); */
+}
+.services-section>* {
+  position: relative;
+  z-index: 2;
+}
+.projects-section{
+  text-align: center;
+  background-color: #4a657c;
+  margin: auto;
+}
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-card {
+  width: 100%;
+  background:wheat;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  background-color:linear-gradient( to right#b7d1e4 #0d47a1);
+}
+
+.service-icon {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+
+.slideshow-container {
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 50%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.caption {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #333;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: 0.4;}
+  to {opacity: 1;}
+}
+/* #contact h2{
+  background: linear-gradient(to right,#0d47a1, #42a5f5);
+
+  text-align: center;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0d47a1;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+ */
+ .contact-section {
+  background: linear-gradient(to right, #0d47a1, #1e88e5);
+  padding: 60px 20px;
+  color: #e3f2fd;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #bbdefb;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  max-width: 400px;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.contact-info strong {
+  color: #ffeb3b;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  color: #e3f2fd;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffeb3b;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #0d47a1;
+  color: #fff;
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #1565c0;
+}
+
+.map-container {
+  margin-top: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+}
+footer {
+  position: relative;
+  background: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.flame{
+  width: 60px;
+  height: 60px;
+  transform-origin: center bottom;
+  animation: flicker 3ms 200ms ease-in infinite alternate;
+
+}
+.small-flame .flamee {
+  transform: rotate(-45deg) scale(1, 1);
+}
+
+.small-flame .red {
+  width: 30px;
+  height: 30px;
+  left: 5px;
+}
+
+.small-flame .orange {
+  width: 25px;
+  height: 25px;
+  left: 7px;
+}
+
+.small-flame .yellow {
+  width: 20px;
+  height: 20px;
+  left: 10px;
+}
+
+.small-flame .white {
+  width: 15px;
+  height: 15px;
+  left: 12px;
+  bottom: -2px;
+}
+
+.small-flame .blue,
+.small-flame .black {
+  display: none;
+}
+
+/* Candle wrapper for stand alignment */
+.candle-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Subtle candle stand */
+.candle-stand {
+  width: 12px;
+  height: 40px;
+  background: #333;
+  border-radius: 4px;
+  margin-top: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.fixed-candel{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+.flamee{
+  bottom: 0;
+  position: relative;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  transform: rotate(-45deg) scale(1.5, 1.5);
+  
+}
+.yellow{
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background: gold;
+  box-shadow: 0px 0px 9px 4px gold;
+}
+.orange{
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background: orange;
+  box-shadow: 0px 0px 9px 4px orange;
+
+}
+.red{
+  left: 5px;
+  width:50px;
+  height: 50px;
+  background: orangered;
+  box-shadow: 0px 0px 5px 4px orangered;
+
+}
+.white{
+  left: 15px;
+  bottom: -4px;
+  width: 30px;
+  height: 30px;
+  background: white;
+  box-shadow: 0px 0px 9px 4px white;
+
+}
+.circle{
+  border-radius: 50px;
+  position: absolute;
+
+
+}
+.blue{
+  width: 10px;
+  height: 10px;
+  bottom: -25px;
+  background: slateblue;
+  box-shadow: 0px 0px 9px 4px slateblue;
+
+
+}
+.black{
+  width: 40px;
+  height: 40px;
+  left: 10px;
+  bottom: -60px;
+  background: black;
+  box-shadow: 0px 0px 9px 4px black;
+}
+@keyframes flicker{
+  0%{transform: rotate(-1deg);}
+  20%{transform: rotate(1deg);}
+  40%{transform:rotate(-1deg);}
+  60%{transform: rotate(1deg) scaleY(0.92);}
+  80%{
+      transform: rotate(-2deg)scaleY(0.92);
+
+  }
+  100%{transform: rotate(-1deg)scaleY(1);}
+
+
+}
+
